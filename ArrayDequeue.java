@@ -1,4 +1,4 @@
-public class ArrayDequeueLinked<T> {
+public class ArrayDequeue<T> {
     private T[] array;
     private int front;
     private int rear;
@@ -6,7 +6,7 @@ public class ArrayDequeueLinked<T> {
     private int capacity;
 
     @SuppressWarnings("unchecked")
-    public ArrayDequeueLinked(int capacity) {
+    public ArrayDequeue(int capacity) {
         this.capacity = capacity;
         this.array = (T[]) new Object[capacity];
         this.front = 0;
